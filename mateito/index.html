@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <meta charset="UTF-8">
+    <title>PDF | API</title>
+    <style>
+        body {
+            font-family: 'Poppins';font-size: 22px;
+        }
+
+        #subir{
+            font-family: 'Poppins';
+        }
+        #pdf{
+            font-family: 'Poppins';
+        }
+        #Pin{
+            font-family: 'Poppins';
+        }
+        #pdfp{
+            font-family: 'Poppins';      
+        }
+        .contenedor{
+            padding: auto;
+            border-style: groove;
+            height: 600px;
+            width: 600px;
+            text-align: center;
+        }
+        </style>
+</head>
+
+<body>
+<div class="contenedor">
+    <form name="form1" enctype="multipart/form-data" method="post" action="index.php">
+        <div class="clase1">
+        <h1>Subir PDF</h1>
+        <p>
+            <!-- MI KEY
+          xmateosis07@gmail.com_28a61f07f7c22f5317d0ec26c136cd73100276499f18b5d2673ebee55c239b4a340e5691 -->
+            
+            <label> Pin del API.</label> <br>
+            <button id="subir"><a href="key.html">Generar Key</a></button>
+            <br/>
+            <br>
+            <input type="text" name="apiKey" placeholder="Pin del API"/ id="Pin">
+        </p>
+        <p>
+            <label> Subir archivo (*.pdf)</label>
+            <br> <br>
+            <input type="hidden" name="MAX_FILE_SIZE" value="9000000"/ id="pdfp">
+            <input type="file"  name="file"/ id="pdfp">
+        </p>
+        <!-- <p> Aqui podra obtener el rango del documento, si se desea ver por completo (todas las hojas) dejarlo sin digitos, si desea ver de la pagina 1 a la 5, escribir 1-5 y asi susesivamente. -->
+            <label> Rango</label>
+            <br>
+            <br>
+            <!-- Colocar 4 para scrapear los datos del vehiculo -->
+            <input type="text" name="pages" value="4">
+        </p>
+        <input type="submit" name="submit" value="Subir archivo" / id="subir">
+    </form>
+</div>
+
+</body>
+</div>
+</html>
+
+            
